@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import * as cdk from 'aws-cdk-lib';
-import { StaticWebsiteStack } from '../lib/static-website-stack';
+import { App } from "aws-cdk-lib";
+import { StaticWebsiteStack } from "../lib/static-website-stack";
 
-const app = new cdk.App();
-new StaticWebsiteStack(app, 'StaticWebsiteStack');
+const app = new App();
+new StaticWebsiteStack(app, "StaticWebsiteStack");
